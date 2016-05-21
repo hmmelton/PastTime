@@ -5,4 +5,12 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Categories for NavDrawer -->
+    <string name="top">Top</string>
+    <string name="baseball">Baseball</string>
+    <string name="basketball">Basketball</string>
+    <string name="football">Football</string>
+    <string name="hockey">Hockey</string>
+    <string name="soccer">Soccer</string>
 </resources>
