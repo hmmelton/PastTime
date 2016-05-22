@@ -13,4 +13,5 @@
     <string name="football">Football</string>
     <string name="hockey">Hockey</string>
     <string name="soccer">Soccer</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>
