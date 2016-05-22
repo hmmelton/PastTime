@@ -13,26 +13,17 @@
 
     <View
         android:id="@+id/login_bottom_bar"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="@drawable/white_bar"
-        android:layout_alignParentRight="true"
+        style="@style/SlidingWhiteBar"
         android:layout_alignParentBottom="true"/>
 
     <View
         android:id="@+id/login_middle_bar"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="@drawable/white_bar"
-        android:layout_alignParentRight="true"
+        style="@style/SlidingWhiteBar"
         android:layout_above="@id/login_bottom_bar"/>
 
     <View
         android:id="@+id/login_top_bar"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="@drawable/white_bar"
-        android:layout_above="@id/login_middle_bar"
-        android:layout_alignParentRight="true"/>
+        style="@style/SlidingWhiteBar"
+        android:layout_above="@id/login_middle_bar"/>
 
 </RelativeLayout>

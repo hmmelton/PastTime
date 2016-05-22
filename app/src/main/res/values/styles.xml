@@ -18,5 +18,12 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    
+    <style name="SlidingWhiteBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/white_bar_height</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/white_bar</item>
+    </style>
 
 </resources>
