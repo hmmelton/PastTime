@@ -11,6 +11,25 @@
     tools:showIn="@layout/activity_login"
     android:background="@color/colorPrimary">
 
+    <ImageView
+        android:id="@+id/login_top_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_screen_top"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20pt"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:alpha="0"/>
+
     <View
         android:id="@+id/login_bottom_bar"
         style="@style/SlidingWhiteBar"
@@ -25,5 +44,18 @@
         android:id="@+id/login_top_bar"
         style="@style/SlidingWhiteBar"
         android:layout_above="@id/login_middle_bar"/>
+
+    <TextView
+        android:id="@+id/facebook_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook_login"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@color/com_facebook_blue"
+        android:alpha="0"/>
 
 </RelativeLayout>
