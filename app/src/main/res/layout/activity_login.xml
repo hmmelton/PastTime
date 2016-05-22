@@ -7,6 +7,8 @@
     android:fitsSystemWindows="true"
     tools:context="com.hmmelton.pasttime.LoginActivity">
 
-    <include layout="@layout/content_login"/>
+    <include
+        android:id="@+id/content_login"
+        layout="@layout/content_login"/>
 
 </android.support.design.widget.CoordinatorLayout>
