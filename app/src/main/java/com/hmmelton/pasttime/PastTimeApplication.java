@@ -2,6 +2,8 @@ package com.hmmelton.pasttime;
 
 import android.app.Application;
 
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 import com.hmmelton.pasttime.Models.User;
 
 /**
@@ -15,6 +17,10 @@ public class PastTimeApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        // initialize Facebook SDK and Facebook analytics
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
 
         instance = this;
     }
