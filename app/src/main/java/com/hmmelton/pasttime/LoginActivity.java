@@ -17,6 +17,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
 
         // content view - contains sub-views for activity
         View contentView = findViewById(R.id.content_login);
@@ -39,7 +44,5 @@ public class LoginActivity extends AppCompatActivity {
         middleBar.startAnimation(middleAnim);
         topBar.startAnimation(topAnim);
 
-
     }
-
 }
