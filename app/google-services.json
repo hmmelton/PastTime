@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "188185261242",
+    "firebase_url": "https://project-1914004523385398090.firebaseio.com",
+    "project_id": "project-1914004523385398090",
+    "storage_bucket": "project-1914004523385398090.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188185261242:android:a3ec2899ce429a8b",
+        "android_client_info": {
+          "package_name": "com.hmmelton.pasttime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188185261242-ojl83144im4kgudk61s631q7sihoumhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZKKKD7oNcEvQxz7KjKOwfUy8AEGBzFW0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
