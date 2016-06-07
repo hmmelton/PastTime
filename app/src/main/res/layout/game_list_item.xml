@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="5">
+
+    <!-- Main container housing team names and date -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/team_names"
+            style="@style/ListGameTextView"
+            android:text="Chelsea vs. Manchester United"
+            android:padding="@dimen/team_names_padding"/>
+
+        <TextView
+            android:id="@+id/game_date"
+            style="@style/ListGameTextView"
+            android:layout_below="@id/team_names"
+            android:text="16 June 2016"/>
+    </RelativeLayout>
+
+    <!-- Container housing rating -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/ListGameTextView"
+            android:layout_centerInParent="true"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="12pt"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
