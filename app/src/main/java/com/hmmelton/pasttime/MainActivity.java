@@ -1,17 +1,25 @@
 package com.hmmelton.pasttime;
 
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +27,20 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // body layout view inside of main layout
+        CoordinatorLayout appBar = (CoordinatorLayout) findViewById(R.id.app_bar_main);
+        // main content inside body layout
+        RelativeLayout mainContent = (RelativeLayout) appBar.findViewById(R.id.main_content);
+
+        mRecyclerView = (RecyclerView) mainContent.findViewById(R.id.games_list);
+
+        // use layout manager
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        // specify an adapter
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
