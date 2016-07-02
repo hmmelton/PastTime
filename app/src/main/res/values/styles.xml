@@ -26,4 +26,11 @@
         <item name="android:background">@drawable/white_bar</item>
     </style>
 
+    <!-- This style is for TextViews  -->
+    <style name="ListGameTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/team_names_padding</item>
+    </style>
+
 </resources>

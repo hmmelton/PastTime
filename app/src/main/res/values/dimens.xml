@@ -8,4 +8,6 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <dimen name="white_bar_height">30dp</dimen>
+    <!-- Custom sizings -->
+    <dimen name="team_names_padding">8dp</dimen>
 </resources>
